@@ -46,7 +46,7 @@ h2{
     margin-bottom: 1rem;
 }
 
-h3{line-height:1;}
+h3 {line-height:1;}
 
 p{
     font-weight:200;
@@ -95,6 +95,7 @@ a:hover{ color: #FFBE00; }
 .text-center {text-align: center;}
 .text-right {text-align: right;} 
 
+
 /*---------Header Styles--------*/
 
 header{
@@ -107,6 +108,12 @@ header h3 {
     font-size: 6rem;
     line-height:1; 
 }
+
+.logo {
+    font-weight: 700; 
+    font-size: 1.3rem;}
+
+    .menu{font-weight: 600;}
 
 /*---------background images--------*/
 

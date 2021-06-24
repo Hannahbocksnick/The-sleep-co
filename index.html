@@ -14,9 +14,9 @@
 
     <!--- this is Catamaran fonts style sheet 200, 400, 500, 800 -->
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet" />
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!--- This is our CSS Style Sheet-->
 
     <link rel="stylesheet" href="/style.css" />
@@ -27,16 +27,25 @@
 
     <body>
         <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/services.html">Services</a>
+            
         </nav>
 
 <!------------------------- Header Banner-->
-    <header class="padded grid text-center tall-100">
+    <header class="padded grid text-center tall-60">
+        <div class="col-4-top text-left">
+              <a href="/index.html">
+                <h1 class="logo"> THE SLEEP CO</h1>
+              </a>
+        </div>
+            <nav class="col-8-top text-right menu">
+                <a href="/index.html" class="padded-sm">Home</a>
+                <a href="/about.html" class="padded-sm">About</a>
+                <a href="/products.html" class="padded-sm">Our Products</a>
+                <a href="/contact.html" class="padded-sm">Contact</a>
+            </nav>
+    
         <div class="col-12-middle">
-            <h3 class="editable">
+            <h3 class="editable"> 
                 <span class="featured-text">sleep</span> like a baby
             </h3>
             <h1 class="font-weight-normal editable">
