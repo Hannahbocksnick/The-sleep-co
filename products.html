@@ -4,7 +4,6 @@
 <head>
     <title> Products </title>
 
-
     <!---- This is fontawsesome icons-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,16 +26,24 @@
 
     <!--- this is the Body of HTML where all the content of the page goes-->
 
-    <body>
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/products.html"> Our Products</a>
-            <a href="/contact.html">Contact</a>
-        </nav>
+<body>
+       
+<!------------------------- Header Banner------------------------------------->
 
-<!------------------------- Header Banner-->
-    <header class="padded grid text-center tall-100">
+    <header class="padded grid text-center tall-50">
+        <div class="header-nav col-12 grid">
+         <div class="col-4-top text-left">
+               <a href="/index.html" class="logo">
+                 <h2> THE SLEEP CO</h1>
+               </a>
+         </div>
+             <nav class="col-8-top text-right">
+                 <a href="/index.html" class="padded-sm">Home</a>
+                 <a href="/about.html" class="padded-sm">About</a>
+                 <a href="/products.html" class="padded-sm">Our Products</a>
+                 <a href="/contact.html" class="padded-sm">Contact</a>
+             </nav>
+         </div> 
         <div class="col-12-middle">
             <h3 class="editable">
                 <span class="featured-text">addictively</span> soft
@@ -47,22 +54,124 @@
         </div>
     </header>
 
+<!----------------------- Text Grid -------------------------->
+    <section class="padded grid bg-yellow">
+        <div class="padded-sm col-12 text-center">
+            <h2>our mattress<span class="featured-text-white"> promise</span></h2>
+        </div>
+        <div class="padded-sm col-3 editable">
+            <h3> little heading </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla dolorem aut facilis ipsa dicta beatae nemo. Dolorem illo expedita ab praesentium obcaecati, impedit rerum, nobis vitae facilis, provident placeat.</p>
+        </div>
+        <div class="padded-sm col-3 editable">
+            <h3> little heading </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla dolorem aut facilis ipsa dicta beatae nemo. Dolorem illo expedita ab praesentium obcaecati, impedit rerum, nobis vitae facilis, provident placeat.</p>
+        </div>
+        <div class="padded-sm col-3 editable">
+            <h3> little heading </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla dolorem aut facilis ipsa dicta beatae nemo. Dolorem illo expedita ab praesentium obcaecati, impedit rerum, nobis vitae facilis, provident placeat.</p>
+        </div>
+        <div class="padded-sm col-3 editable">
+            <h3> little heading </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla dolorem aut facilis ipsa dicta beatae nemo. Dolorem illo expedita ab praesentium obcaecati, impedit rerum, nobis vitae facilis, provident placeat.</p>
+        </div>
+    </section>
 
-<!--------------- Footer Section ------------>
-<footer class="padded grid-spaceBetween bg-dark">
-    <div class="col-4-bottom">
-        <h2>let's <br /><span class="featured-text">connect</span> </h2>  
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui minus ea corporis deleniti consequuntur laudantium! Ab ex enim nostrum ea accusamus non impedit deserunt, quam eveniet commodi sunt eaque nesciunt.</p>
+<!----------------------- Cards Section -------------------------->
+
+    <section class="grid padded">
+        <div class="col-4_sm-12 padded-sm">
+            <div class="card">
+                <div class="bg-image portrait">  </div>
+                    <div class="padded-sm">
+                        <h3> standard mattress</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum assumenda ipsa officia rerum soluta, doloribus incidunt voluptatum laudantium ducimus animi fugit consectetur quisquam necessitatibus hic odio distinctio praesentium alias!</p>
+                    </div>
+            </div>
+        </div>
+        <div class="col-4_sm-12 padded-sm">
+            <div class="card">
+                <div class="bg-image portrait">  </div>
+                    <div class="padded-sm">
+                        <h3> deluxe mattress</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum assumenda ipsa officia rerum soluta, doloribus incidunt voluptatum laudantium ducimus animi fugit consectetur quisquam necessitatibus hic odio distinctio praesentium alias!</p>
+                   </div>
+            </div>
+        </div>
+        <div class="col-4_sm-12 padded-sm">
+            <div class="card">
+                <div class="bg-image portrait"> </div>
+                    <div class="padded-sm">
+                        <h3> luxury mattress</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum assumenda ipsa officia rerum soluta, doloribus incidunt voluptatum laudantium ducimus animi fugit consectetur quisquam necessitatibus hic odio distinctio praesentium alias!</p>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+<!----------------------- Banner Section -------------------------->
+
+<section class="padded text-center bg-dark tall-70 grid">
+    <div class="col-12-middle">
+        <h3 class="big-text"> 
+            <span class="small-text font-weight-normal">spend over $150 and activate</span> 
+            <br/> <span class="featured-text">free</span> express shipping 
+        </h3>
     </div>
-    <div class="col-5-bottom"> 
-        <p> <strong>Call:</strong> <a href='tel:+104555 5555'>04555 5555</a></p> 
-        <p> <strong>Email:</strong> <a href='mailto:hello@thesleepco.com'>hello@thesleepco.com</a></p>
-        <p> <strong>Store:</strong> <a href='#'> 55 Main St, Chicago</a></p>
-        <p> <strong>Instagram:</strong> <a href='#'> @thesleepco </a></p>
+</section>
+
+<!----------------------- Gallery Section -------------------------->
+
+<section class="grid">
+    <div class="padded col-6-middle">
+        <h2 class="editable">
+            a catchy<span class="featured-text"> heading</span>
+        </h2>
+        <p class="editable">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a target="_blank" rel="noopener" href="http://google.com">Tempora</a> voluptates cum, officiis perspiciatis totam obcaecati consequuntur, debitis qui culpa minus hic consequatur iure eum adipisci molestias autem porro, excepturi atque.
+        </p>
     </div>
-</footer>
+    <div class="bg-image bg-bed col-6 tall-70">
+        <!---background image-->
+    </div>
+    <div class="bg-image bg-pug col-6 tall-70">
+        <!---background image-->
+    </div>
+    <div class="padded col-6-middle"> 
+        <h2 class="editable">
+            <span class="featured-text">something</span> else
+        </h2>
+         <p class="editable">
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora voluptates cum, officiis perspiciatis totam obcaecati consequuntur, debitis qui culpa minus hic consequatur iure eum adipisci molestias autem porro, excepturi atque.
+         </p>
+    </div>
+    <div class="padded col-6-middle">
+        <h2 class="editable">
+            <span class="featured-text">another</span> heading
+        </h2>
+        <p class="editable">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a target="_blank" rel="noopener" href="http://google.com">Tempora</a> voluptates cum, officiis perspiciatis totam obcaecati consequuntur, debitis qui culpa minus hic consequatur iure eum adipisci molestias autem porro, excepturi atque.
+        </p>
+    </div>
+    <div class="bg-image bg-bed col-6 tall-70">
+        <!---background image-->
+    </div>
+</section>
 
 
+<!----------------------- Footer Section -------------------------->
 
-     </body>
+    <footer class="padded grid-spaceBetween bg-dark">
+        <div class="col-12-middle text-center">
+            <h3 class="footer-text">THE SLEEP CO</h3>  
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui minus ea corporis deleniti consequuntur laudantium! <br> Ab ex enim nostrum ea accusamus non impedit deserunt, quam eveniet commodi sunt eaque nesciunt.</p>
+        </div>
+        <div class="col-12-middle text-center"> 
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-pinterest-square"></i>
+            <i class="fab fa-instagram-square"></i>
+        </div>
+    </footer>
+
+</body>
 </html>
