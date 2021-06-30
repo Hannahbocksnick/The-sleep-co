@@ -150,11 +150,11 @@ footer a {border:none;}
 
 /*---------background images--------*/
 
-.bg-bed{
+.bg-bed {
     background-image:url('/Images/thesleepco-bed.jpg');
 }
 
-.bg-pug{
+.bg-pug {
     background-image:url('/Images/thesleepco-pug.jpg');
     background-position:50% 35% ;
 }
@@ -172,12 +172,12 @@ footer a {border:none;}
 }
 
 .bg-coffee {
-    background-image:url('/Images/thesleepco_coffee.jpg');
+    background-image:url('/Images/thesleepco-coffee.jpg');
     background-position: 50% 57%;
 }
 
 .bg-cat {
-    background-image:url('/Images/thesleepco_cat.jpg');
+    background-image:url('/Images/thesleepco-cat.jpg');
     background-position: 50% 57%;
 }
 
@@ -250,8 +250,7 @@ textarea:focus{
   .show-md { display: block; }
   .hide-md { display: none;  }
 
-  .md-tall-80 { min-height:80vh;}
-}
+   .md-tall-80 { min-height:80vh;}
 
     .md-tall-50 { min-height:50vh;}
 }
