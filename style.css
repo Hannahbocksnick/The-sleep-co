@@ -162,6 +162,7 @@ footer a {border:none;}
 .bg-pillow {
     background-image:url('/Images/thesleepco-yellow.jpg');
     background-position: 50% 57%;
+    background-size:cover; 
 }
 
 
