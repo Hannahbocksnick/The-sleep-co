@@ -1,5 +1,16 @@
 ---
 layout: default
+cards: 
+ - heading: standard mattress
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse omnis vero expedita dolorum, repudiandae dolore. Tempore, omnis. Reprehenderit beatae vel asperiores eaque enim ad, quidem magni eius molestias mollitia iure.
+   featured_image: /Images/thesleepco-white.jpg
+ - heading: delux mattress
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse omnis vero expedita dolorum, repudiandae dolore. Tempore, omnis. Reprehenderit beatae vel asperiores eaque enim ad, quidem magni eius molestias mollitia iure.
+   featured_image: /Images/thesleepco-bed.jpg
+ - heading: luxury mattress
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse omnis vero expedita dolorum, repudiandae dolore. Tempore, omnis. Reprehenderit beatae vel asperiores eaque enim ad, quidem magni eius molestias mollitia iure.
+   featured_image: /Images/thesleepco-coffee.jpg
+
 ---
 
 <!------------------------- Header Banner------------------------------------->
@@ -44,33 +55,18 @@ layout: default
 <!----------------------- Cards Section -------------------------->
 
     <section class="grid padded">
+        {% for item in page.cards %}
         <div class="col-4_sm-12 padded-sm">
             <div class="card">
-                <div class="bg-image portrait">  </div>
+                <div class="bg-image portrait" style="background-image:url('{{item.featured_image}}')">  </div>
                     <div class="padded-sm sm-text-center">
-                        <h3> standard mattress</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum assumenda ipsa officia rerum soluta, doloribus incidunt voluptatum laudantium ducimus animi fugit consectetur quisquam necessitatibus hic odio distinctio praesentium alias!</p>
+                        <h3> {{item.heading}}</h3>
+                        <p>{{item.description}}</p>
                     </div>
+                </div>    
             </div>
         </div>
-        <div class="col-4_sm-12 padded-sm  ">
-            <div class="card">
-                <div class="bg-image portrait">  </div>
-                    <div class="padded-sm sm-text-center">
-                        <h3> deluxe mattress</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum assumenda ipsa officia rerum soluta, doloribus incidunt voluptatum laudantium ducimus animi fugit consectetur quisquam necessitatibus hic odio distinctio praesentium alias!</p>
-                   </div>
-            </div>
-        </div>
-        <div class="col-4_sm-12 padded-sm">
-            <div class="card">
-                <div class="bg-image portrait"> </div>
-                    <div class="padded-sm .sm-text-center ">
-                        <h3> luxury mattress</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum assumenda ipsa officia rerum soluta, doloribus incidunt voluptatum laudantium ducimus animi fugit consectetur quisquam necessitatibus hic odio distinctio praesentium alias!</p>
-                 </div>
-            </div>
-        </div>
+        {% endfor %}
     </section>
 
 <!----------------------- Banner Section -------------------------->

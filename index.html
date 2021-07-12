@@ -1,5 +1,14 @@
 ---
 layout: default
+featured:
+ - icon: fas fa-cloud
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque sequi libero ducimus! Minus exercitationem sed laboriosam error nemo provident, soluta asperiores! Omnis vitae facere excepturi. Voluptatum repellendus labore asperiores!
+ - icon: fas fa-apple-alt
+   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, facilis distinctio illum, culpa quidem necessitatibus placeat magnam voluptas tenetur aperiam commodi omnis temporibus ex eveniet rem eligendi ratione, neque vel!
+ - icon: fas fa-cloud-meatball
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus tempore rerum, dolorem explicabo delectus quasi vitae libero error praesentium possimus assumenda excepturi nemo? Itaque libero tempora voluptatum fuga molestiae!
+ - icon: fas fa-seedling
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui inventore sed nihil totam, eligendi fugit incidunt blanditiis odit voluptate dolorum iure vero, dolores explicabo nemo tempore? Consectetur, odit quaerat?
 ---
 
 
@@ -51,26 +60,17 @@ layout: default
     </section>
 
     <!------------------------------- Features Section ------------------------------>
-    <section class="padded grid bg-dark">
+    <section class="padded grid-center bg-dark">
         <div class="padded-sm col-12 text-center">
             <h2><span class="featured-text">features</span> you will love</h2>
         </div>
+        {% for item in page.featured %}
          <div class="padded-sm col-3_sm-6_xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla dolorem aut facilis ipsa dicta beatae nemo. Dolorem illo expedita ab praesentium obcaecati, impedit rerum, nobis vitae facilis, provident placeat.</p>
+            <i class="{{item.icon}}"></i>
+            <p> {{item.description}} </p>
          </div>
-        <div class="padded-sm col-3_sm-6_xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla dolorem aut facilis ipsa dicta beatae nemo. Dolorem illo expedita ab praesentium obcaecati, impedit rerum, nobis vitae facilis, provident placeat.</p>
-        </div>
-        <div class="padded-sm col-3_sm-6_xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla dolorem aut facilis ipsa dicta beatae nemo. Dolorem illo expedita ab praesentium obcaecati, impedit rerum, nobis vitae facilis, provident placeat.</p>
-        </div>
-        <div class="padded-sm col-3_sm-6_xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla dolorem aut facilis ipsa dicta beatae nemo. Dolorem illo expedita ab praesentium obcaecati, impedit rerum, nobis vitae facilis, provident placeat.</p>
-         </div>
+         {% endfor %}
+    
     </section>
 
 <!----------------------------- Banner Section ------------------------->
