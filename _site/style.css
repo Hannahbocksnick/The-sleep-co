@@ -148,6 +148,34 @@ footer a {border:none;}
     margin-bottom: 2rem;
 }
 
+
+
+/*---- mobile menu styles */
+
+.mobile-menu {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.mobile-menu a{
+    display:block;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.hamburger-button{
+    position:relative;
+    z-index: 2;
+}
+
+.hamburger-button i {
+    font-size: 2.2rem;
+    margin-bottom:0;
+}
+
 /*---------background images--------*/
 
 .bg-bed {
@@ -239,7 +267,8 @@ textarea:focus{
 
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md,
+.mobile-menu {
 	display: none;
 }
 
@@ -327,6 +356,6 @@ textarea:focus{
      h1{    
         font-size: 1.4rem;
         line-height:1.1;
-        }
-    
+        }   
 }
+

@@ -24,6 +24,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+<!-- ANIMATE ON SCROLL -->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 <!--- This is our CSS Style Sheet-->
 
     <link rel="stylesheet" href="/style.css" />
@@ -39,20 +43,35 @@
 <header class=" grid tall-70 md-tall-50">
     
     <div class="header-nav col-12-top grid text-left">
-    <div class="col-4_sm-12-middle sm-padded-b-0">
+    <div class="col-4_sm-11-middle sm-padded-b-0">
         <a href="/index.html" class="logo">
             <h2 > THE SLEEP CO</h2>
         </a>
 
     </div>
 
-    <nav class="col-8_sm-12-middle text-right sm-text-center">
+    <nav class="col-8_sm-12-middle text-right sm-text-center hide-sm">
         <a href="/index.html" class="padded-sm">Home</a>
         <a href="/about.html" class="padded-sm">About</a>
         <a href="/products.html" class="padded-sm">Our Products</a>
         <a href="/contact.html" class="padded-sm">Contact</a>
     </nav>
+
+    <div class="col-1 show-sm">
+        <div class="hamburger-button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
 </div>
+
+<nav class="mobile-menu bg-yellow padded">
+    <a href="/index.html" class="padded-sm">Home</a>
+    <a href="/about.html" class="padded-sm">About</a>
+    <a href="/products.html" class="padded-sm">Our Products</a>
+    <a href="/contact.html" class="padded-sm">Contact</a>
+</nav>
+
 
 
         <div class="col-12-middle text-center">
@@ -196,6 +215,18 @@
         </div>
     </footer>
 
+<!---- ADD JQUERY ------>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!---animate on scroll-->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!---- custom javascript file  ------>
+
+<script src="/scripts.js"></script>
       
 </body>
 </html>
