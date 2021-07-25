@@ -10,13 +10,26 @@
     background-image: url('/Images/thesleepco-white.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: rgb (240,240,240);
+    background-position:center;
 }
 
+/* Aspect Ratio */
 .portrait-tall {padding-bottom: 175%;}
 .portrait {padding-bottom: 125%;}
 .square {padding-bottom: 100%;}
 .landscape { padding-bottom: 66%;}
 .landscape-wide {padding-bottom: 56%;}
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+/* Background Position */
+.bg-pos-t-l { background-position: left top; }
+.bg-pos-b-r { background-position: right bottom; }
 
 /* ------------------Universal styles & utility classes */
 
@@ -232,6 +245,12 @@ footer a {border:none;}
     padding: 1rem;
 }
 
+
+/*Image Gallery*/
+
+.gallery [class*="col-"]{
+    padding:0.5%;
+}
 
 
 /*---------Buttons and Forms --------*/
