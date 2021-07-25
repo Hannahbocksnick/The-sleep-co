@@ -1,24 +1,21 @@
 ---
 layout: default
 gallery:
-  - column-size: col-6_sm-12
+  - column-size: col-4_sm-12
+    aspect-ratio: landscape-wide
+    background-image: /Images/thesleepco-bed.jpg
+  - column-size: col-4_sm-12
     aspect-ratio: square
-    background_image: /Images/thesleepco-bed.jpg
-  - column-size: col-6_sm-12
-    aspect-ratio: square
-    background_image: /Images/thesleepco-pug.jpg
+    background-image: /Images/thesleepco-pug.jpg
   - column-size: col-12
     aspect-ratio: landscape
-    background_image: /Images/thesleepco-golden.jpg
-  - column-size: col-4
+    background-image: /Images/thesleepco-golden.jpg
+  - column-size: col-6
     aspect-ratio: square
-    background_image: /Images/thesleepco-blue.jpg
-  - column-size: col-4
+    background-image: /Images/thesleepco-blue.jpg
+  - column-size: col-6
     aspect-ratio: square
-    background_image: /Images/thesleepco-cat.jpg
-  - column-size: col-4
-    aspect-ratio: square
-    background_image: /Images/thesleepco-coffee.jpg
+    background-image: /Images/thesleepco-cat.jpg
 ---
 
 <!------------------------- Header Banner------------------------------------->
@@ -46,7 +43,7 @@ gallery:
         {% for item in page.gallery %}
 
             <div class="{{item.column-size}}">
-            <div class="bg-image {{item.aspect-ratio}}"       style="background-image:url('{{item.background_image}}');"></div>
+            <div class="bg-image {{item.aspect-ratio}}" style="background-image:url('{{item.background_image}}');"></div>
             </div>
 
         {% endfor %}
@@ -76,4 +73,3 @@ gallery:
     </div>
 </div>
 </section> -->
-
