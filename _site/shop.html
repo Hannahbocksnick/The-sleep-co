@@ -1,12 +1,80 @@
+<!DOCTYPE html>
+<html>
+<!---This is the Head of HTML where we add external resources and meta data-->
+<head>
+    <title>Sleep Co</title>
+
+<!---- view port meta for responsive-->
 
 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<!------------------------- Header Banner------------------------------------->
+<!---- This is fontawsesome icons-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!---this is gridlex stylesheet --->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+<!--- this is Catamaran fonts style sheet 200, 400, 500, 800 -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- ANIMATE ON SCROLL -->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!--- This is our CSS Style Sheet-->
+
+    <link rel="stylesheet" href="/style.css" />
+
+</head>
+
+<!--- this is the Body of HTML where all the content of the page goes-->
+
+<body>
+
+        <!------------------------- Header Banner------------------------------------->
 
 <header class=" grid tall-100 md-tall-80">
       
-    {% include header-nav.html %}
+    <div class="header-nav col-12-top grid text-left">
+    <div class="col-4_sm-11-middle sm-padded-b-0">
+        <a href="/index.html" class="logo">
+            <h2 > THE SLEEP CO</h2>
+        </a>
+
+    </div>
+
+    <nav class="col-8_sm-12-middle text-right sm-text-center hide-sm">
+        <a href="/index.html" class="padded-sm">Home</a>
+        <a href="/about.html" class="padded-sm">About</a>
+        <a href="/products.html" class="padded-sm">Our Products</a>
+        <a href="/contact.html" class="padded-sm">Contact</a>
+        <a href="/gallery.html" class="padded-sm">Gallery</a>
+    </nav>
+
+    <div class="col-1 show-sm">
+        <div class="hamburger-button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+</div>
+
+<nav class="mobile-menu bg-yellow padded">
+    <a href="/index.html" class="padded-sm">Home</a>
+    <a href="/about.html" class="padded-sm">About</a>
+    <a href="/products.html" class="padded-sm">Our Products</a>
+    <a href="/contact.html" class="padded-sm">Contact</a>
+    <a href="/gallery.html" class="padded-sm">Gallery</a>
+</nav>
+
+
 
     <div class="col-12 text-center">
         <h3 class="editable" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500"> 
@@ -17,3 +85,204 @@
         </h1>
     </div>
 </header>
+
+
+<!------------------------- Shopify Button Code------------------------------------->
+
+
+<div id='collection-component-1627256467860'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'hannah-bocksnick-designs.myshopify.com',
+      storefrontAccessToken: '1f98f3fc9b28e07b66eee611aada2a45',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: '272695918747',
+        node: document.getElementById('collection-component-1627256467860'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px",
+          "width": "calc(25% - 20px)"
+        },
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        },
+        "imgWrapper": {
+          "padding-top": "calc(75% + 15px)",
+          "position": "relative",
+          "height": "0"
+        }
+      },
+      "button": {
+        "font-family": "Lato, sans-serif",
+        ":hover": {
+          "background-color": "#e6ab00"
+        },
+        "background-color": "#ffbe00",
+        ":focus": {
+          "background-color": "#e6ab00"
+        }
+      }
+    },
+    "text": {
+      "button": "Details!"
+    },
+    "googleFonts": [
+      "Lato"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Lato, sans-serif",
+        ":hover": {
+          "background-color": "#e6ab00"
+        },
+        "background-color": "#ffbe00",
+        ":focus": {
+          "background-color": "#e6ab00"
+        }
+      }
+    },
+    "googleFonts": [
+      "Lato"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Lato, sans-serif",
+        ":hover": {
+          "background-color": "#e6ab00"
+        },
+        "background-color": "#ffbe00",
+        ":focus": {
+          "background-color": "#e6ab00"
+        }
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    },
+    "googleFonts": [
+      "Lato"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Lato, sans-serif",
+        "background-color": "#ffbe00",
+        ":hover": {
+          "background-color": "#e6ab00"
+        },
+        ":focus": {
+          "background-color": "#e6ab00"
+        }
+      }
+    },
+    "googleFonts": [
+      "Lato"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<!----------- this is the Header---------->
+
+
+
+
+<!----------- this is the Footer---------->
+
+
+    <footer class="padded grid-spaceBetween bg-dark">
+        <div class="col-12-middle text-center">
+            <h3 class="footer-text">THE SLEEP CO</h3>  
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui minus ea corporis deleniti consequuntur laudantium! <br> Ab ex enim nostrum ea accusamus non impedit deserunt, quam eveniet commodi sunt eaque nesciunt.</p>
+        </div>
+        <div class="col-12-middle text-center"> 
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-pinterest-square"></i>
+            <i class="fab fa-instagram-square"></i>
+        </div>
+    </footer>
+
+<!---- ADD JQUERY ------>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!---animate on scroll-->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!---- custom javascript file  ------>
+
+<script src="/scripts.js"></script>
+      
+</body>
+</html>
