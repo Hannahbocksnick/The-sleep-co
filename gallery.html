@@ -1,29 +1,37 @@
 ---
 layout: default
+popup-gallery: true
+gallery-background: bg-dark
 gallery:
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /Images/thesleepco-bed.jpg
+    type: dog
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /Images/thesleepco-pug.jpg
+    type: dog
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /Images/thesleepco-blue.jpg
+    type: dog
   - column-size: col-12
     aspect-ratio: landscape
     background_image: /Images/thesleepco-golden.jpg
+    type: cat
   - column-size: col-6
     aspect-ratio: square
-    background_image: /Images/thesleepco-blue.jpg
+    background_image: /Images/thesleepco-coffee.jpg
+    type: cat
   - column-size: col-6
     aspect-ratio: square
     background_image: /Images/thesleepco-cat.jpg
+    type: rabbit
 ---
 
 <!------------------------- Header Banner------------------------------------->
 
-<header class=" grid tall-100 md-tall-80">
+<header class="grid tall-100 md-tall-80">
       
     {% include header-nav.html %}
 
@@ -39,7 +47,41 @@ gallery:
 
 <!-- Gallery Code -->
 
-<section class="padded">
+
+<!-- Pop up Gallery -->
+
+
+{% if page.popup-gallery == true %}
+
+<section class="padded {{page.gallery-background}}">
+  <h2> Pop up Gallery</h2>
+  <div class="gallery grid" id="lightgallery">
+
+    {% for item in page.gallery %}
+    {% if item.type == 'dog' %}
+
+        <a class="{{item.column-size}}" href="{{item.background_image}}">
+            <div class="bg-image {{item.aspect-ratio}}"
+            style="background-image: url('{{item.background_image}}');">
+            </div>
+          </a>
+
+    {% endif %}      
+    {% endfor %}
+
+        
+  </div>
+
+</section>
+
+{% else %}
+
+<!-- Standard Gallery -->
+
+
+<section class="padded {{page.gallery-background}}">
+
+<h2> Standard Gallery</h2>
 
     <div class="gallery grid">
         {% for item in page.gallery %}
@@ -52,9 +94,25 @@ gallery:
 
         {% endfor %}
             
-    </div>
+    </div> -->
 
    <!--------------- Testimonial section --------------->
       {% include testimonial.html %}
     
 </section>
+
+{% endif %}
+
+
+<!---<div class="gallery grid-center" id="lightgallery-2">
+
+    <a class="button" href="/images/thesleepco-pug.jpg" title="Sleepy Pug"> View our Work </a>
+    <a href="/images/thesleepco-coffee.jpg" title="Cup of Coffee"></a>  </a>
+    <a  href="/images/thesleepco-blue.jpg" title="Blue Mood"> </a>
+    <a href="/images/thesleepco-bed.jpg" title="Comfy Bed"> </a>
+    <a href="/images/thesleepco-white.jpg"title="Cozy Sheets"> </a>
+    <a href="/images/thesleepco-cat.jpg" title="Kitty"> </a>
+    <a href="/images/thesleepco-golden.jpg" title="Golden Smiles"> </a>
+        
+  </div>
+

@@ -252,6 +252,17 @@ footer a {border:none;}
     padding:0.5%;
 }
 
+/* Background of gallery when active  */
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
+
+.lg-backdrop.in {
+    opacity: 0.95;
+}
+
+.lg-sub-html {background-color: rgba(20,20,20,0.95);}
+
 
 /*---------Buttons and Forms --------*/
 
